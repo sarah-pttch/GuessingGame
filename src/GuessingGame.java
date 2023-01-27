@@ -23,5 +23,7 @@ public class GuessingGame {
 		}
 		
 		System.out.println("You guessed correctly!");
+		
+		scan.close();
 	}
 }
