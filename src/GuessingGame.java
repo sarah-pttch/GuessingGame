@@ -10,16 +10,14 @@ public class GuessingGame {
 		Scanner scan = new Scanner(System.in);
 		
 		System.out.println("What number between 1 and 20 am I thinking of?");
-		String input = scan.next();
-		int guess = Integer.parseInt(input);
+		int guess = Integer.parseInt(scan.next());
 		
 		while(guess != number) {
 			if (guess > number) {
 				System.out.println("Too high! Try again!");
 			} else {System.out.println("Too low! Try again!");
 			}
-			input = scan.next();
-			guess = Integer.parseInt(input);
+			guess = Integer.parseInt(scan.next());
 		}
 		
 		System.out.println("You guessed correctly!");
